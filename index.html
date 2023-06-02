@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        font-size: 1.25rem;
+        background-color: royalblue;
+        color: white;
+        padding: 0.7rem;
+        padding-left: 0.9rem;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.2s;
+      }
+
+      button span {
+        margin-left: 0.3rem;
+        transition: all 0.3s ease-in-out;
+      }
+
+      button i {
+        transform-origin: center center;
+        transition: transform 0.3s ease-in-out;
+      }
+      button:hover .wrapper {
+        animation: fly 0.6s ease-in-out infinite alternate;
+      }
+
+      button:hover i {
+        transform: translateX(1.2rem) rotate(45deg) scale(1.1);
+      }
+      button:hover span {
+        transform: translateX(5em);
+      }
+      button:active {
+        transform: scale(0.95);
+      }
+      @keyframes fly {
+        from {
+          transform: translateY(0.2em);
+        }
+        to {
+          transform: translateY(-0.2em);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button>
+      <div class="wrapper">
+        <i class="fa-regular fa-paper-plane"></i>
+      </div>
+
+      <span>Send</span>
+    </button>
+  </body>
+</html>
