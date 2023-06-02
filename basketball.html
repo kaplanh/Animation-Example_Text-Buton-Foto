@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(https://media.istockphoto.com/id/1201438254/de/foto/basketball-arena.jpg?s=2048x2048&w=is&k=20&c=FhHZ1fHoGTf9Y5311DGvpB9qH9DKfNhqDqMHp0SfU3c=);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: url(./basket.jpg);
+        background-size:cover;
+        animation: travel .5s ease infinite;
+      }
+
+      img {
+        display: flex;
+        height:100%;
+        width: 100%;
+    }
+
+      @keyframes travel {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(220px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <audio id="hu-ha" src="./mp3indirdur-Athena-12-Dev-Adam-(Athena).mp3"></audio>
+    <script>
+        const müzik = document.querySelector('#hu-ha')
+        window.addEventListener('load',()=>{
+            müzik.play()
+        })
+
+        window.addEventListener("load", () => {
+  document.getElementById("input").focus()
+})
+
+    </script>
+  </body>
+</html>
