@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       body {
         background-image: url(https://media.istockphoto.com/id/1201438254/de/foto/basketball-arena.jpg?s=2048x2048&w=is&k=20&c=FhHZ1fHoGTf9Y5311DGvpB9qH9DKfNhqDqMHp0SfU3c=);
@@ -14,20 +21,20 @@
         justify-content: center;
         align-items: center;
       }
-      div{
+      div {
         width: 150px;
         height: 150px;
         border-radius: 50%;
         background-image: url(./basket.jpg);
-        background-size:cover;
-        animation: travel .5s ease infinite;
+        background-size: cover;
+        animation: travel 0.5s ease infinite;
       }
 
       img {
         display: flex;
-        height:100%;
+        height: 100%;
         width: 100%;
-    }
+      }
 
       @keyframes travel {
         0% {
@@ -37,21 +44,39 @@
           transform: translateY(220px);
         }
       }
+
+      a {
+        z-index: 1;
+        font-size: 5rem;
+        text-decoration: none;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     </style>
   </head>
   <body>
     <div></div>
-    <audio id="hu-ha" src="./mp3indirdur-Athena-12-Dev-Adam-(Athena).mp3"></audio>
+    <audio
+      id="hu-ha"
+      src="./mp3indirdur-Athena-12-Dev-Adam-(Athena).mp3"
+    ></audio>
+
+    <a href="./index.html">🎈</a>
+
     <script>
-        const müzik = document.querySelector('#hu-ha')
-        window.addEventListener('load',()=>{
-            müzik.play()
-        })
+      const müzik = document.querySelector("#hu-ha");
+      window.addEventListener("load", () => {
+        müzik.play();
+      });
 
-        window.addEventListener("load", () => {
-  document.getElementById("input").focus()
-})
-
+      window.addEventListener("load", () => {
+        document.getElementById("input").focus();
+      });
     </script>
   </body>
 </html>
