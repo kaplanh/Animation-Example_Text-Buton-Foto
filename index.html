@@ -16,9 +16,9 @@
       body {
         background-image: url("https://cdna.artstation.com/p/assets/images/images/023/837/440/large/penny-chen-kobe-ok202002.jpg?1580487653");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center;
-        height: 95vh;
+        height: 98.5vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -98,6 +98,15 @@
     </style>
   </head>
   <body>
+     <button id="music">
+      <div class="wrapper">
+        <a href="./basketball.html"
+          ><i class="fa-regular fa-paper-plane"></i
+        ></a>
+      </div>
+
+      <span>Music</span>
+    </button>
     <h1>BÜYÜK USTANIN ANISINA</h1>
 
     <button>
@@ -107,12 +116,17 @@
         ></a>
       </div>
 
-      <span>Send</span>
+      <span>Next</span>
     </button>
 
     <audio src="./winningelevation.mp3" id="müzik"></audio>
     <script>
       const müzik = document.querySelector("#müzik");
+      const musicBtn=document.querySelector('#music')
+      
+      musicBtn.addEventListener("click", () => {
+        müzik.play();
+      });
       window.addEventListener("load", () => {
         müzik.play();
       });
