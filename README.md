@@ -8,7 +8,7 @@
 
 ## Description
 
-The project aims to create an animated page using CSS animation, transform and transition.
+The project aims to create an animated page using CSS animation, transform, transition JS DOM Manipulation.
 
 
 ## Project Skeleton
